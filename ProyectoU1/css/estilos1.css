@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -55,6 +57,7 @@ body{
     width: 90%;
     max-width: 1200px;
     margin: auto;
+   
 }
 
 .bg_animate{
@@ -88,7 +91,7 @@ body{
     color: #fff;
     font-size: 60px;
     font-weight: 800;
-    margin-bottom: 90px;
+    margin-bottom: 20px;
 }
 
 .banner_title .llamanos{
@@ -116,7 +119,6 @@ body{
 .banner_img img{
     width: 600px;
     display: block;
-
 }
 
 /* burbujas */
