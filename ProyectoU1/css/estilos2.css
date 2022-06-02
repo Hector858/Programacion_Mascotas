@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'open sans';
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .contenedor {
@@ -178,7 +178,7 @@ main .sobre-nosotros{
 }
 
 .servicio-ind h3{
-    margin: 10px 0;
+    margin: 15px;
 }
 
 .servicio-ind p{
@@ -361,6 +361,6 @@ footer{
 
     .titulo-final{
         font-size: 20px;
-        font-family:Arial, Helvetica, sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
     }
 }
