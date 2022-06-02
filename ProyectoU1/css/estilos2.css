@@ -21,6 +21,7 @@ body {
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 main .sobre-nosotros{
     padding: 30px 0 60px 0;
@@ -360,5 +361,6 @@ footer{
 
     .titulo-final{
         font-size: 20px;
+        font-family:Arial, Helvetica, sans-serif;
     }
 }
