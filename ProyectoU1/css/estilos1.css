@@ -14,7 +14,9 @@ a, li {
 
 .logo-header img{
     width: 50px;
+
 }
+
 
 .header{
     background-color: #1A2849;
@@ -98,12 +100,13 @@ body{
     color: #fff;
     font-size: 20px;
     text-decoration: none;
-    display: inline-block;
+    display:inline-flex;
     background: #1A2849;
     padding: 20px;
     border-radius: 10px;
     cursor: pointer;
     transition: .1s ease all;
+    margin-left: 10%;
     
 }
 .banner_title .llamanos:hover{
