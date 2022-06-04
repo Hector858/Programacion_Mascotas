@@ -15,13 +15,16 @@
 </head>
 <body>
     <div class="content">
-
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html"><button style="width: 80px;">Menú</button></a></li>
+            </ul>
+        </nav>
         <h1 class="logo">Registro de <span>Adopción</span></h1>
-
         <div class="contact-wrapper animated bounceInUp">
             <div class="contact-form">
                 <h3>Formulario</h3>
-                <form action="">
+                <form id="formulario" action="">
                     <p>
                         <label>Nombre Completo</label>
                         <input type="text" name="fullname">
@@ -42,23 +45,18 @@
                         <label>Cédula</label>
                         <input type="text" name="affair">
                     </p>
-                    <p class="block">
+                    <p>
                        <label>Raza de perro que desea adoptar</label> 
-                        <textarea name="text"></textarea>
+                        <input name="text" name="affair">
                     </p>
-                    
                     <p class="block">
-                        <contactos-mascotas>
-                        <button id="greet">
-                            ENVIAR
-                        </button>
-                        </contactos-mascotas>
+                        <contactos-mascotas></contactos-mascotas>
                     </p>
-
+                   
                 </form>
             </div>
             <div class="contact-info">
-                <h4>Mas Infomacion</h4>
+                <h4>Mas Info</h4>
                 <ul>
                     <li><i class="fas fa-map-marker-alt"></i> Baker Street</li>
                     <li><i class="fas fa-phone"></i> (111) 111 111 111</li>
@@ -68,6 +66,6 @@
                 <p>Novicompu.com</p>
             </div>
         </div>
-        <script src="./js/contactos.js"></script>
+        <script type="text/javascript" src="./js/contactos.js"></script>
 </body>
 </html>
