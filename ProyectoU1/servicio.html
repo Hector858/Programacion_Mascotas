@@ -2,9 +2,12 @@
 <html lang="en">
 
 <head>
+	<script src="js/index.js"></script>
+	<link rel="stylesheet" href="css/estilos1.css">
+	<link rel="stylesheet" href="css/estilos2.css">
+	<link rel="shortcut icon" href="img/perro.png" type="image/x-icon" />
 	<meta charset="UTF-8">
-
-    <link rel="shortcut icon" href="img/perro.png" type="image/x-icon" />
+	<link rel="shortcut icon" href="img/perro.png" type="image/x-icon" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Servicios</title>
 	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
@@ -12,32 +15,57 @@
 	<link rel="stylesheet" href="css/servicio1.css">
 	<link rel="shortcut icon" href="img/hacker.png" type="image/x-icon" />
 	<style type="text/css">
-		h1{ text-align: center}
- 	</style>
-
+		h1 {
+			text-align: center
+		}
+	</style>
 </head>
 
 <body>
-	
-    <template id="tmpl">
-        <script>
-          alert("¡Bienvenido, llene el formulario para solicitar un servicio!");
-        </script>
-        <!--
-        <div class="message">¡Bienvenido, llene el formulario para solicitar un servicio!</div>-->
-      </template>
-      <div class="titulo" id="titulo">
-		<h1>Solicitud de servicio</h1>
-	</div>
+	<header class="header">
+		<div class="logo-header">
+			<img src="img/perro.png" alt="">
+		</div>
+		<nav class="menu">
+			<ul>
+				<li><a href="index.html">Inicio</a> </li>
+				<li><a href="contactos.html">Adoptar</a></li>
+				<li><a href="servicio.html">Más servicios</a></li>
+				<li><a href="mascotas.html">Mascotas</a></li>
+			</ul>
+		</nav>
+	</header>
 
 	<main>
-		<form action="" class="formulario" id="formulario">
+		<template id="templateInicio">
+			<script>
+				alert("¡Bienvenido, llene el formulario para solicitar un servicio!");
+			</script>
+			<div class="message">¡Bienvenido, llene el formulario para solicitar un servicio!</div>
+		</template>
+		<template id="tmpl">
+			<style>
+				p {
+					font-weight: bold;
+				}
+			</style>
+			<p id="message"></p>
+		</template>
+		<div id="elem">Haz clic sobre mi</div>
+
+		<div class="tit" id="tit">
+			<h1>Solicitud de servicio</h1>
+		</div>
+
+
+		<form action="index.html" class="formulario" id="formulario">
 
 			<!--Grupo Nombre-->
 			<div class="formulario__grupo" id="grupo__usuario">
 				<label for="usuario" class="formulario__label">Nombres </label>
 				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Jordan Enrique">
+					<input type="text" class="formulario__input" name="usuario" id="usuario"
+						placeholder="Jordan Enrique">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 
 				</div>
@@ -66,7 +94,8 @@
 			<div class="formulario__grupo" id="grupo__password">
 				<label for="password" class="formulario__label">Dirección</label>
 				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="correo" id="correo" placeholder="Jordan@gmail.com">
+					<input type="text" class="formulario__input" name="correo" id="correo"
+						placeholder="Jordan@gmail.com">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 
 				</div>
@@ -117,7 +146,21 @@
 			<div class="formulario__grupo" id="grupo__terminos">
 				<label class="formulario__lab">
 					<input class="formulario__checkox" type="checkbox" name="terminos" id="terminos">
-					Acepto los Terminso y Condiciones
+					Servicio de entrenamiento
+				</label>
+			</div>
+
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__lab">
+					<input class="formulario__checkox" type="checkbox" name="terminos" id="terminos">
+					Servicio de PETShop
+				</label>
+			</div>
+
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__lab">
+					<input class="formulario__checkox" type="checkbox" name="terminos" id="terminos">
+					Servicio de veterinaria
 				</label>
 			</div>
 
@@ -128,7 +171,7 @@
 			</div>
 
 			<div class="formulario__grupo formulario__grupo-btn-enviar">
-				<button type="submit" class="formulario__btn">Enviar</button>
+				<button type="submit" class="formulario__btn" onclick="enviar()">Enviar</button>
 				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado</p>
 
 			</div>
@@ -137,7 +180,7 @@
 		</form>
 
 	</main>
-	
+
 </body>
 
 </html>
