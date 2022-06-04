@@ -37,21 +37,21 @@
 	</header>
 
 	<main>
+		<!--PRIMER TEMPLATE PARA LA BIENVENIDA-->
 		<template id="templateInicio">
 			<script>
 				alert("¡Bienvenido, llene el formulario para solicitar un servicio!");
 			</script>
-			<div class="message">¡Bienvenido, llene el formulario para solicitar un servicio!</div>
+			<!-- <div class="message">¡Bienvenido, llene el formulario para solicitar un servicio!</div>-->
 		</template>
-		<template id="tmpl">
-			<style>
-				p {
-					font-weight: bold;
-				}
-			</style>
-			<p id="message"></p>
-		</template>
-		<div id="elem">Haz clic sobre mi</div>
+
+		<!--SEGUNDO TEMPLATE PARA FOTO DE MASCTOA-->
+		<template id="fotomascota">
+			<h2>Mascotas lindas</h2>
+			<img src="img/mascotas.jpg" width="214" height="204">
+		  </template>
+		  
+
 
 		<div class="tit" id="tit">
 			<h1>Solicitud de servicio</h1>
@@ -95,7 +95,7 @@
 				<label for="password" class="formulario__label">Dirección</label>
 				<div class="formulario__grupo-input">
 					<input type="text" class="formulario__input" name="correo" id="correo"
-						placeholder="Jordan@gmail.com">
+						placeholder="Los rosales">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 
 				</div>
@@ -172,14 +172,34 @@
 
 			<div class="formulario__grupo formulario__grupo-btn-enviar">
 				<button type="submit" class="formulario__btn" onclick="enviar()">Enviar</button>
+				<br>
 				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado</p>
-
 			</div>
-
-
 		</form>
 
+		<button onclick="showContent()" class="formulario__btn">EXCESO DE TERNURA <3</button>
+		<aqui-mascota>
+		</aqui-mascota>
+
 	</main>
+
+	<footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Phone</h4>
+                <p>098296312</p>
+            </div>
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>grupo2@gmail.com</p>
+            </div>
+            <div class="content-foo">
+                <h4>Location</h4>
+                <p>Santo Domingo</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; Erika | Hector | Wilmer | Jordan</h2>
+    </footer>
 
 </body>
 
