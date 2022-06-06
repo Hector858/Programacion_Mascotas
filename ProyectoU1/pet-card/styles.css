@@ -7,7 +7,9 @@
     max-width: 400px;
     align-items: center;
     justify-content: space-around;
-    font-family: Nunito;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#e4e4e5;
+    color: #692d73;
 }
 .avatar {
     width: 120px;
@@ -31,7 +33,7 @@
 .details .actions button {
     border: none;
     padding: 8px 22px;
-    background-color: brown;
+    background-color: #005C98;
     border-radius: 6px;
     color: white;
 }
