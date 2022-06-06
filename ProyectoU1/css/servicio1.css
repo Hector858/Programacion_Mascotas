@@ -158,3 +158,11 @@ main {
 	}
 
 }
+
+.aquimas{
+	display: flex;
+
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
+}
