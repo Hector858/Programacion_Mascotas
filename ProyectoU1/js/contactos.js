@@ -5,7 +5,7 @@ let template = document.createElement("template");
   <link rel="stylesheet" href="css/contactos.css">
   <p class="block">
   <center>
-    <a href="contactos.html"><button type="submit" id="greet">ENVIAR</button></a>
+    <a href="contactos.html"><button type="submit" id="greet"><b>ENVIAR</b></button></a>
     </center>
   </p>
   `;
@@ -88,7 +88,7 @@ class Informacion extends HTMLElement{
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-      <h4>Su Información</h4>
+      <h3 style="font-family: 'Quicksand', sans-serif;">Su Información</h3>
         <ul> 
             <li><i class="fa fa-user"></i> ${nNameEl.value}</li>
             <li><i class="fas fa-envelope-open-text"></i> ${nEmailEl.value} </li>
