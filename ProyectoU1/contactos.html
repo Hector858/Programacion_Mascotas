@@ -14,19 +14,31 @@
     <title>Contactos</title>
 </head>
 <body>
-    <div class="content">
-        <nav class="menu">
+    <header class="header">
+        <div class="logo-header">
+            <img src="img/perro.png" alt="">
+        </div>
+        <nav class="menu1">
             <ul>
-                <li><a href="index.html"><button style="width: 80px;">Menú</button></a></li>
+                <li><a href="index.html">Inicio</a> </li>
+                <li><a href="contactos.html">Adoptar</a></li>
+                <li><a href="servicio.html">Más servicios</a></li>
+                <li><a href="mascotas.html">Mascotas</a></li>
             </ul>
         </nav>
+    </header>
+    <div class="content">
         <h1 class="logo">Registro de <span>Adopción</span></h1>
-        <div class="contact-wrapper animated bounceInUp">
-            <div class="contact-form">
-                <h3>Formulario</h3>
-                <form id="formulario" action="">
+        <div class="clase1">
+            <!--div class="contact-form"-->
+                <!--h3>Formulario</h3-->
+                <informacion-resgistro class="contact-wrapper animated bounceInUp"></informacion-resgistro>
+                    <!--p class="block">
+                        <contactos-mascotas></contactos-mascotas>
+                    </p-->
+                <!--form id="formulario" action="">
                     <p>
-                        <label>Nombre Completo</label>
+                        <label id="label">Nombre Completo</label>
                         <input type="text" name="fullname">
                     </p>
                     <p>
@@ -48,21 +60,14 @@
                     <p>
                        <label>Raza de perro que desea adoptar</label> 
                         <input name="text" name="affair">
-                    </p>
-                    <p class="block">
-                        <contactos-mascotas></contactos-mascotas>
-                    </p>
-                </form>
-            </div>
-            <div class="contact-info">
-                <informacion-resgistro></informacion-resgistro>
-            </div>
+                    </p-->
+                <!--/form-->
+            <!--/div-->
+                
                 <!--div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero provident ipsam necessitatibus repellendus?</p>
                     <p>Novicompu.com</p></div-->
-                
-                
-
         </div>
-        <script type="text/javascript" src="./js/contactos.js"></script>
+    </div>
 </body>
 </html>
+<script type="text/javascript" src="./js/contactos.js"></script>
