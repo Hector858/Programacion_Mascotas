@@ -26,9 +26,9 @@ class PetCard extends HTMLElement {
     //visualizar la pagina
     this.attachShadow({ mode: "open" });
     this.shadowRoot.appendChild(template.content.cloneNode(true));
-}
+  }
 
-toggleInfo = () => {
+  toggleInfo = () => {
     this.showInfo = !this.showInfo;
     this.shadowRoot.querySelector(".info").style.display = this.showInfo
       ? "block"
@@ -36,26 +36,26 @@ toggleInfo = () => {
     this.shadowRoot.querySelector("#toggle").innerHTML = this.showInfo
       ? "Ocultar Detalles"
       : "Ver Detalles";
-};
+  };
 
   static get observedAttributes() {
     return ["name", "avatar"];
-}
+  }
 
   //AttributeChangedCallback, se llama cuando se agrega, 
   //elimina, actualiza o reemplaza un atributo
-attributeChangedCallback(name, oldValue, newValue) {
+  attributeChangedCallback(name, oldValue, newValue) {
     this.shadowRoot.querySelector(".details h2").innerText =
       this.getAttribute("name");
     this.shadowRoot.querySelector(".avatar img").src =
       this.getAttribute("avatar");
     this.shadowRoot.querySelector(".avatar img").alt =
       this.getAttribute("name");
-}
+  }
 
   //connectedCallback, se llama cada vez que el elemento se inserta en el DOM
   //alerata
-connectedCallback() {
+  connectedCallback() {
     this.shadowRoot
       .querySelector("#toggle")
       .addEventListener("click", this.toggleInfo);
@@ -64,10 +64,10 @@ connectedCallback() {
       .addEventListener("click", () =>
         window.alert(`¡Hola humano! Soy ${this.getAttribute("name")}`)
       );
-}
+  }
 
   //disabled Callback, se llama cada vez que el elemento se elimina del DOM
-disconnectedCallback() {
+  disconnectedCallback() {
     this.shadowRoot
       .querySelector("#toggle")
       .removeEventListener("click", this.toggleInfo);
