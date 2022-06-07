@@ -21,28 +21,28 @@ class Informacion extends HTMLElement{
     let nNamelabel=document.createElement('label');
     nNamelabel.innerHTML= `Nombre Completo`;
     let nNameEl=document.createElement('input');
-    nNameEl.setAttribute('type', 'text');
+    
     let nEmaillabel=document.createElement('label');
     nEmaillabel.innerHTML= `Email`;
     let nEmailEl=document.createElement('input');
-    nEmailEl.setAttribute('type', 'Email');
+    
     let nNumerlabel=document.createElement('label');
     nNumerlabel.innerHTML= `Número del teléfono`;
     let nNumerEl=document.createElement('input');
-    nNumerEl.setAttribute('type', 'text');
+    
 
     let nDireclabel=document.createElement('label');
     nDireclabel.innerHTML= `Dirección`;
     let nDirecEl=document.createElement('input');
-    nDirecEl.setAttribute('type', 'text');
+    
     let nCedulabel=document.createElement('label');
     nCedulabel.innerHTML= `Cédula`;
     let nCedulEl=document.createElement('input');
-    nCedulEl.setAttribute('type', 'text');
+    
     let nRazalabel=document.createElement('label');
     nRazalabel.innerHTML= `Raza de perro que desea adoptar`;
     let nRazaEl=document.createElement('input');
-    nRazaEl.setAttribute('type', 'text');
+    /*nRazaEl.setAttribute('type', 'text');*/
 
 
     let parr1=document.createElement('p');
