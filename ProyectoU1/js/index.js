@@ -41,10 +41,10 @@ customElements.define('my-bubble', Burbujas);
 
 class Atributo extends HTMLElement {
     connectedCallback() {
-    const entrenamiento = this.getAttribute('entrenamiento');
-    const qs=entrenamiento!==null ? 'img/index/Entranamiento.svg': 'img/index/pet.svg';
-    this.innerHTML = `<img src="${qs}"`;
+    const icono = this.getAttribute('icono');
+    const qs=icono!==null ? 'img/index/icono1.png': 'img/index/icono1.png';
+    this.innerHTML = `<img src="${qs}"></img>`;
     }
     
 }
-window.customElements.define('imagenes-redes', Atributo);
+window.customElements.define('my-atribute', Atributo);
