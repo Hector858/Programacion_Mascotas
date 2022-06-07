@@ -17,3 +17,13 @@ class MyContent extends HTMLElement{
     }
 }
 customElements.define('my-content', MyContent);
+
+class Atributo extends HTMLElement {
+    connectedCallback() {
+    const entrenamiento = this.getAttribute('entrenamiento');
+    const qs=entrenamiento!==null ? 'img/index/Entranamiento.svg': 'img/index/pet.svg';
+    this.innerHTML = `<img src="${qs}"`;
+    }
+    
+}
+window.customElements.define('imagenes-redes', Atributo);
