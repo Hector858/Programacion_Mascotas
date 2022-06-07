@@ -38,3 +38,13 @@ class Burbujas extends HTMLElement{
     }
 }
 customElements.define('my-bubble', Burbujas);
+
+class Atributo extends HTMLElement {
+    connectedCallback() {
+    const icono = this.getAttribute('icono');
+    const qs=icono!==null ? 'img/index/icono1.png': 'img/index/icono1.png';
+    this.innerHTML = `<img src="${qs}"></img>`;
+    }
+    
+}
+window.customElements.define('my-atribute', Atributo);
