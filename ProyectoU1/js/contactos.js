@@ -127,13 +127,13 @@ class Informacion extends HTMLElement{
   );
 }
 
-disconnectedCallback() {
+/*disconnectedCallback() {
   this.shadowRoot
     .querySelector("#greet")
     .removeEventListener("click", () =>
       window.alert(`Hey there! I'm User`)
     );
-}
+}*/
 
 }
 
