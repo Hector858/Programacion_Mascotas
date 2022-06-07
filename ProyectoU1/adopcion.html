@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mascotas</title>
+    <link rel="stylesheet" href="./css/adopcion.css" />
+    <link rel="stylesheet" href="./css/estilos1.css">
+    <link rel="stylesheet" href="./css/estilos2.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo-header">
+          <img src="img/perro.png" alt="">
+      </div>
+      <nav class="menu">
+          <ul>
+              <li><a href="index.html">Inicio</a> </li>
+              <li><a href="contactos.html">Adoptar</a></li>
+              <li><a href="servicio.html">Más servicios</a></li>
+              <li><a href="adopcion.html">Mascotas</a></li>
+          </ul>
+      </nav>
+    </header>
+
+    <div class="app">
+      <pet-card name="Murphy" avatar="img/adopta/rottweiler.jpeg">
+        <span slot="breed">Rotweiler</span>
+        <span slot="age">2️⃣ Años</span>
+      </pet-card>
+      <pet-card name="Gabbar" avatar="img/adopta/retriever.jpeg">
+        <span slot="breed">Retriever Blanco</span>
+        <span slot="age">3️⃣ Años</span>
+      </pet-card>
+      <pet-card name="Shiro" avatar="img/adopta/bulldog.webp">
+        <span slot="breed">Bull Dog</span>
+        <span slot="age">2️⃣ Años</span>
+      </pet-card>
+    </div>
+    <script src="adopcion.js" type="module"></script>
+    <footer>
+      <div class="contenedor-footer">
+          <div class="content-foo">
+              <h4>Phone</h4>
+              <p>098296312</p>
+          </div>
+          <div class="content-foo">
+              <h4>Email</h4>
+              <p>grupo2@gmail.com</p>
+          </div>
+          <div class="content-foo">
+              <h4>Location</h4>
+              <p>Santo Domingo</p>
+          </div>
+      </div>
+      <h2 class="titulo-final">&copy; Erika | Hector | Wilmer | Jordan</h2>
+  </footer>
+  </body>
+</html>
